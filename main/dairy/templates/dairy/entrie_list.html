@@ -1,0 +1,77 @@
+{% extends 'website/header.html' %}
+{% load static %}
+  
+{% block content %}
+<h2>Entries</h2>
+<a  href="{% url 'entriecreate' %}"><button id='inter' class="btn">Add entrie </button></a>
+
+
+{% comment %} get_content_data is responsible for it {% endcomment %}
+  
+
+  {% for dairy in entry %}
+
+  {% if  dairy.color_type   == 'R' %}
+  <div class="dairy_entry">
+    <div class="dairy_entry_R">
+    
+      <p>{{ dairy.text }}</p>
+      <br>
+      <strong>this day you posted this BLUE {{ dairy.date_posted }}</strong>
+      <p> {{ dairy.color_type }} </p>
+  </div>
+</div>
+      
+       <p id='inter'><a  href="{% url 'entrieupdate' dairy.id %}"><button class="btn" >Edit</button></a></p>
+      <p id='inter' ><a  href="{% url 'entriedelete' dairy.id %}"><button class="btn" >Delete</button></a></p>
+      
+      {% elif  dairy.color_type   == 'B' %}
+      <div class="dairy_entry">
+        <div class="dairy_entry_B">
+        
+          <p>{{ dairy.text }}</p>
+          <br>
+          <strong>this day you posted this BLUE {{ dairy.date_posted }}</strong>
+          <p> {{ dairy.color_type }} </p>
+      </div>
+    </div>
+          
+           <p id='inter'><a  href="{% url 'entrieupdate' dairy.id %}"><button class="btn" >Edit</button></a></p>
+          <p id='inter' ><a  href="{% url 'entriedelete' dairy.id %}"><button class="btn" >Delete</button></a></p>
+
+          {% elif  dairy.color_type   == 'G' %}
+          <div class="dairy_entry">
+            <div class="dairy_entry_G">
+            
+              <p>{{ dairy.text }}</p>
+              <br>
+              <strong>this day you posted this BLUE {{ dairy.date_posted }}</strong>
+              <p> {{ dairy.color_type }} </p>
+          </div>
+        </div>
+              
+               <p id='inter'><a  href="{% url 'entrieupdate' dairy.id %}"><button class="btn" >Edit</button></a></p>
+              <p id='inter' ><a  href="{% url 'entriedelete' dairy.id %}"><button class="btn" >Delete</button></a></p>
+
+
+      {%  else %}
+      <div class="dairy_entry">
+        <div class="dairy_entry_D">
+        
+          <p>{{ dairy.text }}</p>
+          <br>
+          <strong>this day you posted this BLUE {{ dairy.date_posted }}</strong>
+          <p> {{ dairy.color_type }} </p>
+      </div>
+          
+    </div>
+           <p id='inter'><a  href="{% url 'entrieupdate' dairy.id %}"><button class="btn" >Edit</button></a></p>
+          <p id='inter' ><a  href="{% url 'entriedelete' dairy.id %}"><button class="btn" >Delete</button></a></p>
+          
+
+  {% endif %}
+{% endfor %}
+
+
+
+{% endblock %}

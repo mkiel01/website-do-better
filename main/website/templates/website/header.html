@@ -1,0 +1,78 @@
+{% load static %}
+
+<!-- COMMAND + F FOR FAST COMMADN -->
+<!-- F1 -> FORMAT DOCUMENT -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">  
+  <head> 
+    {% block head %} <!-- it is used so we can refer to our css file  -->
+	<link rel="stylesheet" href="{% static 'website/style.css' %}">
+    {% endblock %}
+	
+	<link rel="shortcut icon" src="https://img.icons8.com/office/16/null/octopus.png" type="image/x-icon">
+    <meta charset="utf-8">
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+		</style>
+		
+	
+    <title> do better </title>
+    </head>
+    <body>
+
+
+
+<div class="wrapper">
+		<nav>
+			<a id='cool' href="{% url 'introduction' %}"> <h2> do better </h2> </a>
+			<ul class="links">
+				<li><a href="{% url 'introduction' %}"><b> Introduction </b></a></li>
+				<li><a href="{% url 'program' %}">Program</a></li>
+                <li><a href="{% url 'calendar' %}">Callendar</a></li>
+                <li><a href="{% url 'entrielist' %}">Diary</a></li>
+                <li><a href="{% url 'tasks' %}">To do</a></li>
+                
+                
+				<li><a href="">Your profle</a>
+					<ul class="dropdown">
+						<li><a href="{% url 'inputhourlist' %}">Your summary of hours</a></li>
+						<li><a href="">Your progress</a></li>
+						<li class="dropdown-link"><a href="">apps</a>
+							<ul class="dropdown-2">
+								<li><a href="">callendar</a></li>
+								<li><a href="">to do</a></li>
+								<li><a href="">diary</a></li>
+							</ul>
+						</li>
+						
+					</ul>
+				</li>
+				{% if request.user.is_authenticated %}
+				<li> <a href="{% url 'logout' %}">Logout</a> </li> {% else %}
+				<li><a href="{% url 'register' %}">Sign up</a></li>
+				<li><a href="{% url 'login' %}">Log in</a></li>
+				{% endif %}
+			</ul>
+		</nav>
+	</div>
+	    
+	
+
+      
+          
+        
+    
+  
+      
+
+	  
+  
+
+      {% block content %} <!-- here our code will be writen from other tempates so when we extend base.html 
+        the code from index.html etc will come here  -->
+        {% endblock %}
+
+
+	     

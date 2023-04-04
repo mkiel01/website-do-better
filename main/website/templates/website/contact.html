@@ -1,0 +1,41 @@
+{% extends 'website/header.html' %}
+{% load static %}
+  
+{% block content %}
+
+       <div class="ptext">
+        <span class="border trans">
+          Your feedback
+        </span>
+      </div>
+  
+      <section class="">
+        <h2></h2>
+        <p>
+      
+      <form id="test" method="post" action="database.php">
+      <label for"email">Email</label>
+            <input type="text" class="inline" id="email" name="email"/>
+        <label for"comment">Comment</label>
+            <input type="text" class="inline" id="com" name="com"/>
+            <input type="submit" class="button" value="" />
+         <p>
+        
+        </form>
+        <div class="comments">
+      <label for"comments">See commments</label>
+      <nav>
+      <a target="_blank" href="comments.php"> comments </a>
+      </nav>
+    </div>
+      
+        </p>
+      </section>
+  
+      <div class="ptext">
+        <span class="border">
+          the end
+        </span>
+      </div>
+
+      {% endblock %}

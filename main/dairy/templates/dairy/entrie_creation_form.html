@@ -1,0 +1,12 @@
+{% extends 'website/header.html' %}
+{% load static %}
+  
+{% block content %}
+<h2>Create Owner</h2>
+<form method="post">
+<div class="create_dairy">
+  {% csrf_token %} {{ form.as_p }}
+  <input class="btn" type="submit" value="Submit" />
+</div>
+</form>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'website/header.html' %}
+{% load static %}
+  
+{% block content %}
+<h2>Hour</h2>
+<a href="{% url 'inputhourcreate' %}"><button class="btn">Add hours </button></a>
+
+
+{% comment %} get_content_data is responsible for it {% endcomment %}
+  
+
+  {% for hours in object_list %}
+      <p>{{ hours.inputhour }}</p>
+      
+      <p><a href="{% url 'inputhourupdate' hours.id %}"><button>Edit</button></a></p>
+      <p><a href="{% url 'inputhourdelete' hours.id %}"><button>Delete</button></a></p> 
+
+{% endfor %}
+
+
+
+{% endblock %}

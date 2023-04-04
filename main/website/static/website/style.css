@@ -1,0 +1,388 @@
+:root {
+	--ParentBg: #479AD0;
+	--Color: #000000;
+	--Bg: #7CB9E2; 
+	--Inter: #753F83;
+  }
+
+*{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Poppins', sans-serif;
+}
+
+body  {
+	background-color: var(--ParentBg)
+}
+
+article{
+	margin: 20px;
+
+}
+
+article h2{
+	text-align: center;
+	margin-bottom: 10px;
+
+	
+}
+
+article p{
+	text-align: left;
+	margin-left: 100px;
+	margin-right: 100px;
+}
+
+.about-the-program{
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	margin: 20px;
+	padding: 10px;
+	background-color: var(--Bg);
+	border-radius: 30px;
+  }
+
+.about-the-program h2{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.about-the-program img{
+	width: 500px;
+	height: 500px;
+}
+  
+#about-the-program{
+	float:right;
+	margin-top: 0;
+	margin-right: 20px;
+}
+
+/* THREE ICONS CSS */
+
+.three-icons {
+	display: flex;
+	margin-bottom: 20px;
+}
+
+.div-content {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.icons {
+    width: 10em;
+	height: 10em;
+	justify-content: center;
+	margin-bottom: 20px;
+    /* margin-right: 1em; */
+}
+
+
+.ocean-div {
+	display: flex;
+	justify-content: center;
+}
+
+#ocean-pic {
+	width: 500px;
+	height: 500px;
+}
+
+.card-contain{
+	flex-direction: column;
+}
+
+card {
+	font-family: Roboto, sans-serif;
+    display: flex;
+    padding: 2em;
+}
+
+/* card:first-child{
+     margin-top: 0px; 
+} */
+
+/* card:nth-child(odd){
+    background: blue;
+}
+
+card:nth-child(even){
+    background: purple;
+} */
+
+card img {
+    width: 2.5em;
+	height: 2.5em;
+    float: left;
+    margin-right: 1em;
+}
+
+.card-contents > h2,
+.card-contents > p {
+    margin: 0px;
+}
+
+.card-body {
+	padding: 20px;
+}
+
+/* THREE ICONS CSS END */
+
+.about-me{
+	display: flex;
+	flex-direction: row;
+	justify-content: right;
+	margin: 120px;
+  }
+
+.about-me h2{
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.about-me img{
+	width: 500px;
+	height: 500px;
+}
+  
+#about-me{
+	float:right;
+	margin-top: 0;
+	margin-right: 20px;
+}
+
+/* HEADER CSS */
+
+nav {
+	background: linear-gradient(to left,#6441A5,#2a0845);	
+	margin-bottom: 20px;
+}
+
+/* In CSS, ::after creates a pseudo-element that is the last child of the selected element.
+ It is often used to add 
+cosmetic content to an element with the content property. It is inline by default. */
+
+nav:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+nav h2 {
+	color: var(--Color);
+	float: left;
+	padding: 15px;
+	margin-left: 150px;
+}
+
+nav:first-child {
+	margin-top:auto;
+}
+
+.links {
+	margin-right: 150px;
+	float: right;
+	color: var(--Color);
+}
+
+.links li {
+	display: inline-block;
+	list-style: none;
+	position: relative;
+}
+
+.links li a{
+	display: inline-block;
+	color: var(--Color);
+	padding: 20px;
+	text-decoration: none;
+}
+
+.links li:hover{
+	background: #555;
+}
+
+.links:hover a{
+    color: var(--Inter);
+  }
+
+.links li:hover .dropdown{
+	display: block;
+}
+
+.dropdown {
+	background: #111;
+	position: absolute;
+	display: none;
+	/* top: 57px; */
+	left:  0px;
+	width: 150px;
+}
+
+.dropdown li{
+	border: 2px solid #222;
+	display: block;
+	color: #fff;
+}
+
+.dropdown-link:hover .dropdown-2{
+	display: block;
+}
+
+.dropdown-2 {
+	background: #111;
+	position: absolute;
+	display: none;
+	top: 0px;
+	left: 148px;
+	width: 150px;
+}
+
+/* HEADER CSS END */
+
+/* OPINIONS CSS  */
+
+.opinions_all {
+	display: flex;
+	flex-direction: row;
+
+	
+}
+
+.opinions {
+	
+    position: relative;
+    z-index: 2;
+    width: 30%;
+    padding: 57px 0 57px 30px;
+	background-color: var(--Bg);
+	margin-bottom: 20px;
+	min-width: 300px;
+	margin-right: 20px;
+
+}
+#studenth{
+	text-align: center;
+}
+
+
+
+/* OPINIONS CSS END */
+
+/* DAIRY CSS */
+
+.dairy_entry {
+	width: 70%;
+	height: 200px;
+	
+}
+
+.dairy_entry_R {
+	background-color: red;
+}
+
+.dairy_entry_B {
+	background-color: blue;
+}
+
+.dairy_entry_G {
+	background-color: green;
+}
+
+.dairy_entry_D {
+	background-color: var(--Bg);
+}
+
+.btn {
+	width: 80px;
+	height: 50px;
+	background-color: lightblue;
+	color: black;
+	border: 2px solid blue; 
+	transition-duration: 0.4s;
+  }
+
+  .btn:hover {
+	background-color: violet; 
+	color: white;
+  }
+
+  .create_dairy textarea {
+
+	background-color: var(--Bg);
+	
+
+
+  }
+
+/* DAIRY CSS END */
+
+
+
+/* INTRO */
+
+.intro {
+	top: 0;
+	text-align: center;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%; 
+    animation: fadeout 8s;
+    animation-fill-mode: forwards; 
+    background: #000;
+}
+
+.intro span{
+	text-transform: uppercase;
+	display: block;
+}
+
+.text1{
+color: white;
+font-size: 60px;
+font-weight: bold;
+letter-spacing: 8px;
+margin-bottom: 20px;
+background: black;
+position: relative;
+animation: text 3s;
+}
+
+.text2{
+    font-size: 30px;
+    color: aqua;
+}
+
+@keyframes text {
+    0%{
+        color: black;
+        margin-bottom: -40px;
+    }
+    30%{
+        letter-spacing: 25px;
+        margin-bottom: -40px;
+    }
+    85%{
+        letter-spacing: 8px;
+        margin-bottom: -40px;
+    }
+    }
+
+    @keyframes fadeout {
+        from  {
+            opacity: 1;
+        }
+        to {
+            opacity: 0;
+        }
+    }
+	
+	/* INTRO END */

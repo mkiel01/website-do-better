@@ -1,0 +1,255 @@
+{% extends 'website/header.html' %}
+
+{% load static %}
+
+{% block content %}
+
+{% comment %}   
+<div class="intro">
+  <span class="text1"> Welcome to</span>
+  <span class="text2"> be better</span>
+</div> {% endcomment %}
+
+
+
+  
+
+<h1>Hello {{request.user|title}}</h1>
+
+
+    
+
+  <div class="about-the-program">
+    
+    <div id="about-the-programe">
+      <h2>About the program </h2>
+      <p>
+        If you came to this website it already means that you want to improve your life with this program you can achive everything you ever dreamt of.
+        This is a guide to help you create a habbit of learning and improving by following simple steps and rules.
+        The idea of the program is to let you learn without the motivation to pass the exam. If you fufill it's rules you will no longer depend on the teacher to give you the term of the exam to motivate you, rather the habbit will make you consistant in learing so the terms of the exam won't frighten you.
+        The program consists of 3 main tools to help you achive your goal mainly to do so you can set your task cleary and with a certain deadline,
+        dairy which helps you monitor your progress and evaluate it and lastly but not least the callendar which will show you visually what you had done, it helps keep you motivated as visualation of your work is an imporatnt part of the program.
+        The 3 tools work in symbiosis each of then is driven but the other and if implemented corrcly they will guid you to a better life.
+
+
+      </p>
+
+    </div>
+    
+        <img src="{% static 'img/space.jpeg'%}" alt="">
+      </div>
+
+  </div>
+
+   
+    
+
+
+
+    <div class="three-icons">
+      
+
+      <div class="div-content">
+        <img class="icons" src="{% static 'img/fact.png' %}" alt="">
+       
+          <h2> facts </h2>
+        
+      </div>
+  
+      <div class="div-content">
+        <img class="icons" src="{% static 'img/improve.png' %}" alt="">
+       
+          <h2> improvment </h2>
+        
+      </div>
+  
+      <div class="div-content">
+        <img class="icons" src="{% static 'img/future.png' %}" alt="">
+        
+          <h2> future </h2>
+       
+      </div>
+    </div>
+
+      
+
+
+   
+  <div class="ocean-div">
+      <img  id="ocean-pic"  src="{% static 'img/ocean.jpg' %}"/>
+
+    <div class="card-contain">
+      <card>
+        
+        <img src="{% static 'img/confirmation.png' %}" alt="">
+        <div class="card-contents">
+          <h2>Tried and Tested</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, totam?</p>
+        </div>
+      </card>
+      <card>
+        <img src="{% static 'img/performance.png'%}" alt="">
+        <div class="card-contents">
+          <h2>Improve performance</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, totam?</p>
+        </div>
+      </card>
+      <card>
+        <img src="{% static 'img/crm.png'%}" alt="">
+        <div class="card-contents">
+          <h2>Improve relationships</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, totam?</p>
+        </div>
+      </card>
+      <card>
+        <img src="{% static 'img/goal.png'%}" alt="">
+        <div class="card-contents">
+          <h2>Dream big</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, totam?</p>
+        </div>
+      </card>
+    </div>
+  </div>
+  
+
+  
+
+  <article>
+    <h2>
+      Why depending on motivations is a loose end </h2>
+    <p>
+      motivation is a short term solution sure you had your exam and 2 weeks
+      before you studied for it
+      and passed congratualtins but what now you are without any date ahed of you you have nothing to study
+      vacations just started or you jsut have some week off without a detemined date you will do nothing to
+      improve yoursefl beacouse without motivation you have no will power to change your life
+    </p>
+
+  </article>
+
+  <article>
+    <h2>
+      Motivation is ilusion...
+    </h2>
+    <p>
+
+
+      <li>
+        -How many times have you said to yourself that from tomorrow you will study?
+      </li>
+      <li>
+        -How many times have you said to yourself that from tomorrow you will start to work out?
+      </li>
+      <li>
+        -How many times have you said to yourself that from tomorrow you will start a diet?
+      </li>
+      <li>
+        -How many times have you said to yourself that from tomorrow you will reduce time you spend on useless things in
+        life?
+      </li>
+
+
+    </p>
+  </article>
+
+
+
+  <article>
+    <h2>
+      Short story :(
+    </h2>
+
+
+
+
+    <h4>How motivation gave me tunnel vision</h4>
+    <p>
+      My biggest mistake was wishing to have a girlfriend in the first place. But non the less here is the story...
+      One day I met a girl of my dreams. I knew that working out will help me get her. I was highly motivated until i
+      reached my goal. After that i left the gym.
+      A few months leter she broke my heart beacouse of my belly.
+      The lesson is simple and clear a motivation will pass when u reach your goal but habbit stays with you for life.
+
+    </p>
+  </article>
+
+  <article>
+    <h2>Little history fact</h2>
+    <p>
+      what did school teach you about eintein i assume that he was a genius from the start
+      well that's not the whole story my friend
+
+    </p>
+  </article>
+
+
+  
+  <article>
+    <h2>What does the reserach say</h2>
+    <p>
+      People who spend time writing carefully about themselves become happier, less anxious and depressed and physically
+      healthier.
+      They become more productive, persistent and engaged in life. This is because thinking about where you came from,
+      who you are and where you are going helps you chart a simpler and more rewarding path through life.
+    </p>
+  </article>
+
+  <div class="about-me">
+    
+  <div id="about-me">
+    <h2>about me </h2>
+    <p>
+      what did school teach you about eintein i assume that he was a genius from the start
+      well that's not the whole story my friend
+    </p>
+      <p> i am a student at agh univeristy og scince </p>
+  </div>
+  
+      <img src="{% static 'img/ja.JPG'%}" alt="">
+    </div>
+
+  
+    <h1 id="studenth"> 
+      What students say: 
+    </h1>
+
+    <div class="opinions_all">
+  <div class="opinions">
+    <h3> Patryk  </h3>
+    <p> ne of my biggest struggles was not knowing the entire end-to-end process for creating high quality websites. The Web Design: Become a Professional covers a lot of strategy making very clear what clients are willing to invest more money in, and how you can provide amazing value to them. I'm now more confident in what steps to take and what I need to focus on
+    </p>
+
+  </div>
+  <div class="opinions">
+    <h3> Patryk  </h3>
+    <p> ne of my biggest struggles was not knowing the entire end-to-end process for creating high quality websites. The Web Design: Become a Professional covers a lot of strategy making very clear what clients are willing to invest more money in, and how you can provide amazing value to them. I'm now more confident in what steps to take and what I need to focus on
+    </p>
+
+  </div>
+
+</div>
+<div class="opinions">
+  <h3> Patryk  </h3>
+  <p> ne of my biggest struggles was not 
+  </p>
+
+</div>
+
+</div>
+
+  
+  
+
+
+  
+</body>
+
+    {% endblock %}
+
+
+   
+    
+
+
+
+
