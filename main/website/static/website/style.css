@@ -33,31 +33,145 @@ article p{
 	margin-right: 100px;
 }
 
+/* TITLE */
+
+.title {
+	margin-top: 0px;
+	position: relative;
+	text-align: center;
+}
+
+.title img {
+	height: 100%;
+	width: 100%;
+}
+
+.title h2{
+	color: white;
+}
+.text-in-img {
+	position: absolute;
+	top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* TITLE END */
+
+/* GEETING STARTED */
+
+.getting-started {
+	
+	margin-top: 20px;
+	text-align: center;
+	width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+.getting-started img {
+	height: 500px;
+	width: 700px;
+	border-radius: 30px;
+	
+}
+
+.getting-started p {
+	
+}
+
+/* GEETING END */
+
+
+/* ABOUT THE PROGRAM */
+
 .about-the-program{
 	display: flex;
 	flex-direction: row;
 	justify-content: right;
+	margin-left: 50px;
 	margin: 20px;
 	padding: 10px;
 	background-color: var(--Bg);
-	border-radius: 30px;
+	
+	
   }
 
 .about-the-program h2{
-	text-align: center;
+	text-align: left;
 	margin-bottom: 10px;
+	margin-left: 20px;
 }
 
 .about-the-program img{
 	width: 500px;
 	height: 500px;
+	border-radius: 10px;
+	margin: 20px;
+
 }
+
+.about-the-program p{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+
+
   
 #about-the-program{
+	
 	float:right;
 	margin-top: 0;
 	margin-right: 20px;
 }
+
+/* ABOUT THE PROGRAM END*/
+
+/* TOOLS */
+
+.tools{
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	margin-left: 50px;
+	margin: 20px;
+	padding: 10px;
+	background-color: var(--Bg);
+	
+	
+  }
+
+.tools h2{
+	text-align: right;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+
+.tools img{
+	
+	width: 500px;
+	height: 500px;
+	border-radius: 10px;
+	margin: 20px;
+
+}
+
+.tools p{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+  
+.tools-items {
+	
+	float:left;
+	margin-top: 0;
+	margin-right: 20px;
+}
+
+/* TOOLS END*/
 
 /* THREE ICONS CSS */
 
@@ -159,7 +273,7 @@ card img {
 
 nav {
 	background: linear-gradient(to left,#6441A5,#2a0845);	
-	margin-bottom: 20px;
+	
 }
 
 /* In CSS, ::after creates a pseudo-element that is the last child of the selected element.
@@ -240,6 +354,7 @@ nav:first-child {
 	top: 0px;
 	left: 148px;
 	width: 150px;
+	
 }
 
 /* HEADER CSS END */
