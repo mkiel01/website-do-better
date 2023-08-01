@@ -1,4 +1,5 @@
-
+{% extends 'website/header.html' %}
+{% load static %}
 {% comment %} <h1> Register <h1>
 
     <form method="POST">
@@ -9,18 +10,11 @@
     
     <p> Already have an account? <a href=""> Login </a></p> {% endcomment %}
 
-    <style>
-        h1, label, p, input {
-        display: flex;
-        flex-direction: column;
-        margin: 10px
-        
-        }
-
-    </style>
+  
 
     {% block content %}
-    
+    <div class = "register_form">
+
     <div class="header-bar">
         <h1>Register</h1>
     </div>
@@ -40,7 +34,7 @@
         </form>
         <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
     </div>
-    
+</div>
     
     
     

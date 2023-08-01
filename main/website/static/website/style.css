@@ -42,7 +42,7 @@ article p{
 }
 
 .title img {
-	height: 100%;
+	height: 900px;
 	width: 100%;
 }
 
@@ -63,6 +63,7 @@ article p{
 .getting-started {
 	
 	margin-top: 50px;
+	margin-bottom: 50px;
 	text-align: center;
 	width: 1100px;
 	margin-left: auto;
@@ -81,11 +82,41 @@ article p{
 	margin-top: 50px;
 }
 
-.getting-started p {
+
+
+/* GEETING END */
+
+/* THREE ICONS CSS */
+
+.three-icons {
+	display: flex;
+	margin-bottom: 20px;
+	width: 1100px;
+	margin-left: auto;
+	margin-right: auto;
+	
 	
 }
 
-/* GEETING END */
+.div-content {
+	margin: auto 100px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.icons {
+    width: 10em;
+	height: 10em;
+	justify-content: center;
+	margin-bottom: 20px;
+    /* margin-right: 1em; */
+}
+
+
+
+
+/* THREE ICONS CSS END */
 
 
 /* ABOUT THE PROGRAM */
@@ -94,7 +125,6 @@ article p{
 	display: flex;
 	flex-direction: row;
 	justify-content: right;
-	margin-left: 50px;
 	margin: 50px;
 	padding: 10px;
 	background-color: var(--Bg);
@@ -113,7 +143,7 @@ article p{
 	width: 500px;
 	height: 500px;
 	border-radius: 10px;
-	margin: 20px;
+	margin: 100px;
 
 }
 
@@ -178,27 +208,6 @@ article p{
 
 /* TOOLS END*/
 
-/* THREE ICONS CSS */
-
-.three-icons {
-	display: flex;
-	margin-bottom: 20px;
-}
-
-.div-content {
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-
-.icons {
-    width: 10em;
-	height: 10em;
-	justify-content: center;
-	margin-bottom: 20px;
-    /* margin-right: 1em; */
-}
 
 
 .ocean-div {
@@ -249,7 +258,6 @@ card img {
 	padding: 20px;
 }
 
-/* THREE ICONS CSS END */
 
 .about-me{
 	display: flex;
@@ -298,6 +306,10 @@ nav h2 {
 	margin-left: 150px;
 }
 
+nav h2:hover {
+	color: var(--ParentBg);
+
+}
 nav:first-child {
 	margin-top:auto;
 }
@@ -326,7 +338,7 @@ nav:first-child {
 }
 
 .links:hover a{
-    color: var(--Inter);
+    color: var(--ParentBg);
   }
 
 .links li:hover .dropdown{
@@ -506,3 +518,11 @@ animation: text 3s;
     }
 	
 	/* INTRO END */
+
+.register_form h1, label, p, input {
+	display: flex;
+	flex-direction: column;
+	margin: 10px
+	
+	}
+	
