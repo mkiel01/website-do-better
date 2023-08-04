@@ -18,9 +18,10 @@ body  {
 article{
 	margin: 20px;
 
+
 }
 
-article h2{
+article h2, h3{
 	text-align: center;
 	margin-bottom: 10px;
 
@@ -130,6 +131,10 @@ article p{
 	background-color: var(--Bg);
 	
 	
+  }
+
+  .about-the-program ul{
+	margin-left: 40px;
   }
 
 .about-the-program h2{
