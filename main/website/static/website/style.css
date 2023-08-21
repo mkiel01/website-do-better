@@ -17,21 +17,37 @@ body  {
 
 article{
 	margin: 20px;
+	margin-left: 300px;
+	margin-right: 300px;
+	padding: 20px; /* Add padding to the entire article */
+	border-radius: 20px;
+
 
 
 }
 
+article:nth-child(even) {
+    background-color: var(--Bg); /* Even number color */
+  }
+
+  article:nth-child(odd) {
+    background-color:  var(--ParentBg);/* Odd number color */
+  }
+
 article h2, h3{
 	text-align: center;
-	margin-bottom: 10px;
+	
 
 	
 }
 
 article p{
-	text-align: left;
-	margin-left: 100px;
-	margin-right: 100px;
+	text-align: center;
+	margin-bottom: 50px;
+	margin-left: 20px;
+	margin-right: 20px;
+	
+
 }
 
 /* TITLE */
@@ -40,17 +56,20 @@ article p{
 	margin-top: 0px;
 	position: relative;
 	text-align: center;
+	z-index: -1;
 }
 
 .title img {
 	height: 900px;
 	width: 100%;
+	
 }
 
 .title h2{
 	color: white;
 }
 .text-in-img {
+	
 	position: absolute;
 	top: 50%;
   left: 50%;
@@ -91,7 +110,7 @@ article p{
 
 .three-icons {
 	display: flex;
-	margin-bottom: 20px;
+	margin-bottom: 50px;
 	width: 1100px;
 	margin-left: auto;
 	margin-right: auto;
