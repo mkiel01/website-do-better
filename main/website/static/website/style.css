@@ -15,48 +15,15 @@ body  {
 	background-color: var(--ParentBg)
 }
 
-article{
-	margin: 20px;
-	margin-left: 300px;
-	margin-right: 300px;
-	padding: 20px; /* Add padding to the entire article */
-	border-radius: 20px;
-
-
-
-}
-
-article:nth-child(even) {
-    background-color: var(--Bg); /* Even number color */
-  }
-
-  article:nth-child(odd) {
-    background-color:  var(--ParentBg);/* Odd number color */
-  }
-
-article h2, h3{
-	text-align: center;
-	
-
-	
-}
-
-article p{
-	text-align: center;
-	margin-bottom: 50px;
-	margin-left: 20px;
-	margin-right: 20px;
-	
-
-}
-
-/* TITLE */
+/* GET YOUR LIFE IN ORDER */
 
 .title {
 	margin-top: 0px;
 	position: relative;
 	text-align: center;
-	z-index: -1;
+	height: 900px;
+
+	/* z-index: -1; */
 }
 
 .title img {
@@ -76,7 +43,7 @@ article p{
   transform: translate(-50%, -50%);
 }
 
-/* TITLE END */
+/* GET YOUR LIFE IN ORDER END */
 
 /* GEETING STARTED */
 
@@ -106,7 +73,7 @@ article p{
 
 /* GEETING END */
 
-/* THREE ICONS CSS */
+/* FACTS IMPROVMENT FUTURE */
 
 .three-icons {
 	display: flex;
@@ -133,11 +100,7 @@ article p{
     /* margin-right: 1em; */
 }
 
-
-
-
-/* THREE ICONS CSS END */
-
+/* FACTS IMPROVMENT FUTURE END */
 
 /* ABOUT THE PROGRAM */
 
@@ -145,45 +108,58 @@ article p{
 	display: flex;
 	flex-direction: row;
 	justify-content: right;
-	margin: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 200px;
+	margin-right: 200px;
 	padding: 10px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	background-color: var(--Bg);
-	
-	
+	border-radius: 10px;
   }
 
-  .about-the-program ul{
-	margin-left: 40px;
-  }
+ 
 
 .about-the-program h2{
 	text-align: left;
-	margin-top: 50px;
+	/* margin-top: 30px; */
 	margin-bottom: 10px;
 	margin-left: 100px;
 }
+
+.about-the-program h3{
+	text-align: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 50px;
+}
+
+
 
 .about-the-program img{
 	width: 500px;
 	height: 500px;
 	border-radius: 10px;
-	margin: 100px;
+	margin-top: auto;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: auto;
 
 }
 
 .about-the-program p{
-	margin-left: 20px;
-	margin-right: 20px;
+	margin-left: 50px;
+	/* margin-right: 20px; */
+	margin-bottom: 10px;
 }
 
-
-
-  
 #about-the-program{
 	
 	float:right;
-	margin-top: 0;
 	margin-right: 20px;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 /* ABOUT THE PROGRAM END*/
@@ -194,95 +170,203 @@ article p{
 	display: flex;
 	flex-direction: row;
 	justify-content: left;
-	margin-left: 50px;
-	margin: 20px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	margin-left: 200px;
+	margin-right: 200px;
 	padding: 10px;
+	padding-top: 50px;
+	padding-bottom: 50px;
 	background-color: var(--Bg);
-	
-	
+	border-radius: 10px;
   }
 
-.tools h2{
-	text-align: right;
-	margin-bottom: 10px;
-	margin-left: 20px;
-}
+  .tools-items {
+	margin: auto;
+  }
 
 .tools img{
-	
 	width: 500px;
 	height: 500px;
 	border-radius: 10px;
-	margin: 20px;
-
-}
-
-.tools p{
-	margin-left: 20px;
-	margin-right: 20px;
-}
-
-  
-.tools-items {
-	
-	float:left;
-	margin-top: 0;
-	margin-right: 20px;
-}
-
-/* TOOLS END*/
-
-
-
-.ocean-div {
-	display: flex;
-	justify-content: center;
-}
-
-#ocean-pic {
-	width: 500px;
-	height: 500px;
+	margin-top: auto;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-bottom: auto;
 }
 
 .card-contain{
 	flex-direction: column;
+	
 }
 
 card {
-	font-family: Roboto, sans-serif;
     display: flex;
-    padding: 2em;
 }
 
-/* card:first-child{
-     margin-top: 0px; 
-} */
-
-/* card:nth-child(odd){
-    background: blue;
-}
-
-card:nth-child(even){
-    background: purple;
-} */
-
-card img {
-    width: 2.5em;
-	height: 2.5em;
+#img_in_card {
+	display: flex;
+    width: 60px;
+	height: 60px;
     float: left;
     margin-right: 1em;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 .card-contents > h2,
 .card-contents > p {
-    margin: 0px;
+	float: left;
 }
 
-.card-body {
+
+.card-contents h2{
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 5px;
+}
+
+.card-contents p{
+	margin-top: 0px;
+	margin-right: 50px;
+	margin-bottom: 30px;
+	margin-left: 0px;
+	
+}
+
+
+  
+
+   .bento-grid {
+	display: flex;
+	column-gap: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+  }
+
+.column-left,
+.column-right {
+  width: 50%;
+}
+
+.column-right {
+  display: flex;
+  flex-direction: column;
+
+}
+  
+  .row-1 {
+	border-radius: 10px;
+	background-color: var(--Bg);
 	padding: 20px;
+	box-sizing: border-box;
+	height: 280px;
+	margin-bottom: 20px;
+  }
+  
+  .row-2 {
+	border-radius: 10px;
+	background-color: var(--Bg);
+	padding: 20px;
+	box-sizing: border-box;
+	height: 400px;
+  }
+  
+  .bento-grid article {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+
+  }
+
+  article p {
+	margin-left: 0px;
+  }
+  
+  
+  
+  #n1 {
+	height: 420px;
+	width: 900px;
+  }
+  
+  #n2,
+  #n3 {
+	height: 200px;
+	width: 880px;
+
+	margin-bottom: 0px;
+
+  }
+  
+  .row2{
+	display: flex;
+	flex-direction: row;
+
+  }
+  .secound_row {
+	display: flex;
+	column-gap: 20px;
+	margin-left: 50px;
+	padding: 20px;
+
+	border-radius: 10px;
+	background-color: var(--Bg);
+	box-sizing: border-box;
+	height: 280px;
+	margin-bottom: 20px;
+
+	flex-direction: column;
+
+
+  }
+  #n4 {
+	height: 230px;
+	width: 30%; 
+  }
+  #n5 {
+	height: 230px;
+	width: 70%; 
+	margin-left: 20px;
+	margin-right: 50px;
+  }
+  
+  
+  
+  
+  
+
+/* Additional styles for articles if needed */
+
+#n1 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+#n2 {
+    grid-column: span 2;
+    grid-row: span 1;
+	margin-bottom: 20px;
+}
+
+#n3 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+#n4 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+#n5 {
+    grid-column: span 1;
+    grid-row: span 2;
 }
 
 
+/* MOTIVATION IS ILUSIN ETC END */
 .about-me{
 	display: flex;
 	flex-direction: row;
