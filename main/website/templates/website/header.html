@@ -28,32 +28,34 @@
 		<nav>
 			<a id='cool' href="{% url 'introduction' %}"> <h2> do better </h2> </a>
 			<ul class="links">
-				<li><a href="{% url 'introduction' %}"><b> Introduction </b></a></li>
-				<li><a href="{% url 'program' %}">Program</a></li>
-                <li><a href="{% url 'calendar' %}">Callendar</a></li>
-                <li><a href="{% url 'entrielist' %}">Diary</a></li>
-                <li><a href="{% url 'tasks' %}">To do</a></li>
-                
-                
-				<li><a href="">Your profle</a>
-					<ul class="dropdown">
-						<li><a href="{% url 'inputhourlist' %}">Your summary of hours</a></li>
-						<li><a href="">Your progress</a></li>
-						<li class="dropdown-link"><a href="">apps</a>
-							<ul class="dropdown-2">
-								<li><a href="">callendar</a></li>
-								<li><a href="">to do</a></li>
-								<li><a href="">diary</a></li>
-							</ul>
-						</li>
-						
-					</ul>
-				</li>
-				{% if request.user.is_authenticated %}
-				<li> <a href="{% url 'logout' %}">Logout</a> </li> {% else %}
-				<li><a href="{% url 'register' %}">Sign up</a></li>
-				<li><a href="{% url 'login' %}">Log in</a></li>
-				{% endif %}
+				<li><a href="{% url 'introduction' %}"><span class="item1">Introduction</span></a></li>
+                <li><a href="{% url 'calendar' %}"><span class="item2">Calendar</span></a></li>
+                <li><a href="{% url 'entrielist' %}"><span class="item3">Diary</span></a></li>
+                <li><a href="{% url 'tasks' %}"><span class="item4">To do</span></a></li>
+
+                <li>
+                    <a href=""><span class="item5"> Your profile</span></a>
+                    <ul class="dropdown">
+                        <li><a href="{% url 'inputhourlist' %}">Your summary of hours</a></li>
+                        <li><a href="">Your progress</a></li>
+                        <li class="dropdown-link">
+                            <a href="">Apps</a>
+                            <ul class="dropdown-2">
+                                <li><a href="">Calendar</a></li>
+                                <li><a href="">To do</a></li>
+                                <li><a href="">Diary</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+                {% if request.user.is_authenticated %}
+                    <li><a href="{% url 'logout' %}"><span class="item6"> Logout</span></a></li>
+                {% else %}
+                    <li><a href="{% url 'register' %}"><span class="item7"> Sign up</span></a></li>
+                    <li><a href="{% url 'login' %}"><span class="item8"> Log in</span></a></li>
+                {% endif %}
+
 			</ul>
 		</nav>
 	</div>

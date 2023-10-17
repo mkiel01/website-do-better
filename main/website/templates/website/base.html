@@ -1,0 +1,27 @@
+{% load static %}
+
+<!-- COMMAND + F FOR FAST COMMADN -->
+<!-- F1 -> FORMAT DOCUMENT -->
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">  
+  <head> 
+    {% block head %} <!-- it is used so we can refer to our css file  -->
+	<link rel="stylesheet" href="{% static 'website/style.css' %}">
+    {% endblock %}
+	
+	<link rel="shortcut icon" src="https://img.icons8.com/office/16/null/octopus.png" type="image/x-icon">
+    <meta charset="utf-8">
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+		</style>
+		
+	
+    <title> do better </title>
+    </head>
+    <body>
+
+        {% block content %} <!-- here our code will be writen from other tempates so when we extend base.html 
+            the code from index.html etc will come here  -->
+            {% endblock %}

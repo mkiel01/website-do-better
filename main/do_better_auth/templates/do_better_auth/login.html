@@ -1,4 +1,4 @@
-{% extends 'website/header.html' %}
+{% extends 'website/base.html' %}
 {% load static %}
 {% comment %} <h1> Login <h1>
 
@@ -14,17 +14,25 @@
 
 {% block content %}
 
-<div class="header-bar">
-    <h1>Login</h1>
-</div>
+
+<div class="center-wrapper">
 
 <div class="card-body">
+    <a id='cool' href="{% url 'introduction' %}"> <h1> do better </h1> </a>
+    <h2>Login</h2>
+
     <form method="POST">
         {% csrf_token %}
-        {{form.as_p}}
-        <input class="button" type="submit" value="Login">
-    </form>
-    <p>Don't have an account? <a href="{% url 'register' %}">Register</a></p>
-</div>
+        <label for="{{ form.username.id_for_label }}">Username:</label>
+        {{ form.username }}
+        
+        <label for="{{ form.password.id_for_label }}">Password:</label>
+        {{ form.password }}
+        
+        <input class="custom-button" type="submit" value="Login">
 
+    </form>
+    <p>Don't have an account?  &nbsp; <a id = "hover" href="{% url 'register' %}"> Register</a></p>
+</div>
+</div>
 {% endblock %}

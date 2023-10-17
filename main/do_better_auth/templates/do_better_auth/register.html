@@ -1,4 +1,4 @@
-{% extends 'website/header.html' %}
+{% extends 'website/base.html' %}
 {% load static %}
 {% comment %} <h1> Register <h1>
 
@@ -13,13 +13,18 @@
   
 
     {% block content %}
+
+    <div class="center-wrapper">
+
     <div class = "register_form">
+        <div class="card-body">
+            <a id='cool' href="{% url 'introduction' %}"> <h1> do better </h1> </a>
 
     <div class="header-bar">
-        <h1>Register</h1>
+        <h2>Register</h2>
     </div>
     
-    <div class="card-body">
+   
         <form method="POST">
             {% csrf_token %}
             <label>{{form.username.label}}</label>
@@ -30,12 +35,12 @@
     
             <label>{{form.password2.label}}</label>
             {{form.password2}}
-            <input style="margin-top:10px ;" class="button" type="submit" value="Register">
+            <input class="custom-button" type="submit" value="Register">
         </form>
-        <p>Already have an account? <a href="{% url 'login' %}">Login</a></p>
+        <p>Already have an account?  &nbsp; <a href="{% url 'login' %}">Login</a></p>
     </div>
 </div>
-    
+</div>
     
     
     {% endblock content %}
